@@ -3,10 +3,10 @@ export function loadStorySuccess(story){
   return {type: UPDATE_STORY, story}
 }
 
-export function sendQuery(apiUrl){
-
+export function sendQuery(query){
+debugger;
   return function(dispatch) {
-    const url = `https://content.guardianapis.com/sport?api-key=`  + process.env.REACT_APP_API_KEY
+    const url = `https://content.guardianapis.com/search?q=${query}&api-key=`  + process.env.REACT_APP_API_KEY
     return getQuery(url).then(story => {
       dispatch(loadStorySuccess(story))
     })

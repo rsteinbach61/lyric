@@ -5,7 +5,7 @@ import * as queryTypes from '../store/actions';
 
 class SearchContainer extends Component {
   render(){
-    debugger;
+    
     return(
       <div> search container
         <SearchForm sendQuery={this.props.sendQuery}/>

@@ -5,18 +5,19 @@ import ResultsPage from '../components/resultsPage';
 class ResultsContainer extends Component {
 
   render(){
-
+debugger;
+//const apiUrl = this.props.story.results[0].apiUrl
   return(
 
     <div>
     Results Container
-      <ResultsPage story={this.props.story}/>
+      <ResultsPage text={this.props.text}/>
     </div>
   )
 }
 }
 const mapStateToProps = state => {
-  return {story: state.story}
+  return {text: state.text}
 }
 
 export default connect(mapStateToProps)(ResultsContainer)

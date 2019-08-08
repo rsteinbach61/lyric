@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 class ResultsPage extends Component {
   render() {
-    if(this.props.story){
+    debugger;
+    if(this.props.text){
     return(
       <div>
       Results
-      <p>{this.props.story.results[0].apiUrl}</p>
+      <p>{this.props.text}</p>
       </div>
     )
   } else {

@@ -4,7 +4,6 @@ export function loadStorySuccess(story){
 }
 
 export function sendQuery(query){
-debugger;
   return function(dispatch) {
     const url = `https://content.guardianapis.com/search?q=${query}&api-key=`  + process.env.REACT_APP_API_KEY
     return getQuery(url).then(story => {

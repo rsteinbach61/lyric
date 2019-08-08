@@ -11,7 +11,6 @@ class SearchForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    debugger;
     this.props.sendQuery(this.state.query)
     this.setState({query: ''})
   }
